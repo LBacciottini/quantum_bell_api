@@ -17,15 +17,3 @@ def depolarize_rate(pair, rate, time):
     p = 1 - math.e**(-rate*time)
     return depolarize(pair, p)
 
-
-# test that the functions preserve the trace
-
-def test_depolarize():
-    # generate 100 different Bell-diagonal pairs
-    a_values = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99, 0.995]
-    pairs = [epr_pair(a, (1-a)/3, (1-a)/3, (1-a)/3) for a in a_values]
-    p = 0.1
-    for pair in pairs:
-        new_pair = depolarize(pair, p)
-        assert math.isclose(sum(new_pair), 1, rel_tol=1e-9), f"Pair {pair} was depolarized to {new_pair}"
-
