@@ -1,4 +1,4 @@
-from bell_diag_api.utility import epr_pair
+from quantum_bell_api.utility import epr_pair
 
 __all__ = ['swap', 'get_max_num_swaps_werner', "swap_k_times", "concatenate_swaps", "get_max_num_swaps"]
 

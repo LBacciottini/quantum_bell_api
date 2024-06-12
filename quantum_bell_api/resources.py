@@ -1,5 +1,5 @@
-from bell_diag_api.dejmps import *
-from bell_diag_api.utility import epr_pair
+from quantum_bell_api.dejmps import *
+from quantum_bell_api.utility import epr_pair
 from functools import reduce
 
 

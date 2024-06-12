@@ -1,6 +1,6 @@
 __all__ = ["dejmps"]
 
-from bell_diag_api.utility import epr_pair
+from quantum_bell_api.utility import epr_pair
 
 
 # compute N

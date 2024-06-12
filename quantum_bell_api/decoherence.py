@@ -3,7 +3,7 @@ Implement decoherence noises on Bell-diagonal states
 """
 import math
 
-from bell_diag_api.utility import epr_pair
+from quantum_bell_api.utility import epr_pair
 
 
 def depolarize(pair, p):
